@@ -15,7 +15,11 @@ layout: null
       {{ content }}
     </main>
     
-    {% include sidebar-categories.html %}
+    <aside class="sidebar">
+      {% include author_profile.html %}
+      {% include sidebar-categories.html %}
+    </aside>
+
 
     {% if page.mermaid %}
       {% include mermaid.html %}
