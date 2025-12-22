@@ -25,6 +25,16 @@
   background-color: #f9f9f9;
 }
 
+.footer-links {
+  text-align: center;
+  color: #555;
+  a {
+    color: #0366d6;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+}
+
 /* Hero Section */
 .hero-banner {
   display: flex;
