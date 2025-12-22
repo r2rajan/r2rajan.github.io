@@ -13,6 +13,8 @@ layout: single
 toc: true
 toc_sticky: true
 mermaid: true
+sidebar:
+  nav: categories
 ---
 
 ## Why Threat Modeling Matters for GenAI
