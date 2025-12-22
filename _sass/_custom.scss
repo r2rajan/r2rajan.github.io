@@ -1,0 +1,10 @@
+.sidebar-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-links li a {
+  display: block;
+  padding: 0.25rem 0;
+  color: $color-link;
+}
