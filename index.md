@@ -2,22 +2,22 @@
 layout: home
 title: "Ramesh Rajan | Cloud, Security & AI Insights"
 permalink: /
+show_sidebar: true
 ---
-
 <!-- Hero Section -->
 <div class="hero-banner">
   <img class="avatar" src="/assets/images/avatar.jpg" alt="Ramesh Rajan">
   <div class="hero-text">
     <h1>Ramesh Rajan</h1>
-    <p>Strategic & Technical Insights on <strong>Cloud, Security, and AI</strong></p>
+    <p>Strategic & Technical Insights on <strong> Cloud, Security, and AI</strong></p>
     <p>
       <a href="https://github.com/r2rajan">GitHub</a> |
       <a href="https://linkedin.com/in/rrajan">LinkedIn</a>
     </p>
   </div>
 </div>
-
 ---
+
 
 ## Explore Topics
 
@@ -26,19 +26,19 @@ permalink: /
 <div class="card">
   <h3>Cloud</h3>
   <p>Articles on **AWS, serverless architectures, cloud strategies, and modern infrastructure design**.</p>
-  <a href="/categories/cloud/">Explore Cloud →</a>
+  <a href="{{ '/categories/cloud/' | relative_url }}">Explore Cloud →</a>
 </div>
 
 <div class="card">
   <h3>Security</h3>
   <p>Insights into **security architectures, governance, and cloud security strategies**.</p>
-  <a href="/categories/security/">Explore Security →</a>
+  <a href="{{ '/categories/security/' | relative_url }}">Explore Security →</a>
 </div>
 
 <div class="card">
   <h3>AI</h3>
   <p>Posts on **AI/ML technologies, LLM applications, and integrating AI into cloud solutions**.</p>
-  <a href="/categories/ai/">Explore AI →</a>
+  <a href="{{ '/categories/ai/' | relative_url }}">Explore AI →</a>
 </div>
 
 </div>
