@@ -14,3 +14,53 @@
 .content {
   flex: 1;                   // main content takes remaining space
 }
+
+/* Category Cards */
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-cards .card {
+  flex: 1 1 250px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.category-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.category-cards .card h3 {
+  margin-top: 0;
+}
+
+.category-cards .card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0366d6;
+}
+
+/* Latest Posts Cards */
+.latest-posts .post-card {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 0;
+}
+
+.latest-posts .post-card h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.latest-posts .post-card a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.latest-posts .post-card p {
+  margin: 0;
+}
