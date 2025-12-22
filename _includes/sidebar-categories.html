@@ -1,10 +1,13 @@
 <h4>Categories</h4>
 <ul class="sidebar-links">
+  {% assign top_cats = "security,cloud,ai" | split: "," %}
   {% for cat in site.categories %}
-    <li>
-      <a href="{{ '/categories/' | append: cat[0] | relative_url }}">
-        {{ cat[0] | capitalize }} ({{ cat[1].size }})
-      </a>
-    </li>
+    {% if top_cats contains cat[0] %}
+      <li>
+        <a href="{{ '/categories/' | append: cat[0] | relative_url }}">
+          {{ cat[0] | capitalize }} ({{ cat[1].size }})
+        </a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
