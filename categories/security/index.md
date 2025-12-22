@@ -17,6 +17,3 @@ show_excerpt: true   # optional
   </div>
 {% endfor %}
 
-{% for post in site.categories.security %}
-  <p>{{ post.title }}</p>
-{% endfor %}
