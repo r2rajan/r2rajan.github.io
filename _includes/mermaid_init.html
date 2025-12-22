@@ -1,0 +1,13 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.mermaid) {
+    document.querySelectorAll('pre code.language-mermaid').forEach(function(block) {
+      const mermaidDiv = document.createElement('div');
+      mermaidDiv.className = 'mermaid';
+      mermaidDiv.innerHTML = block.textContent;
+      block.parentNode.parentNode.replaceWith(mermaidDiv);
+    });
+    mermaid.initialize({ startOnLoad: true, theme: "aqua", securityLevel: "loose" });
+  }
+});
+</script>
