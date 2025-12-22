@@ -3,6 +3,7 @@ layout: default
 title: "Ramesh Rajan | Cloud, Security & AI Insights"
 permalink: /
 show_sidebar: true
+hide_title: true
 ---
 <!-- Hero Section -->
 <div class="hero-banner">
