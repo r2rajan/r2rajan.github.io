@@ -7,9 +7,21 @@ baseurl: "" # leave empty for user/organization sites
 author:
   name: "Ramesh Rajan"
   email: "info@rameshrajan.info"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Cloud Security & AI | AWS | Research–Industry Collaboration"
+  location: "United States"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/r2rajan"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/rrajan"
 
 # Theme (GitHub Pages supported)
-theme: minima
+theme: "mmistakes/minimal-mistakes@4.26.2"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "dark" # air, aqua, contrast, dark, dirt, neon, mint
 
 # Build settings
 markdown: kramdown
