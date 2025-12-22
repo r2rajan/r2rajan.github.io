@@ -41,3 +41,4 @@ graph TD
   API_Gateway --> Lambda
   Lambda -->|Invoke| Bedrock
   Lambda --> DynamoDB
+```
