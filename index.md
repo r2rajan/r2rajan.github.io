@@ -21,7 +21,7 @@ show_sidebar: true
 
 ## Explore Topics
 
-<div class="grid-row category-cards">
+<div class="grid-row full-width category-cards">
 
 <div class="grid-item card">
   <h3>AI</h3>
