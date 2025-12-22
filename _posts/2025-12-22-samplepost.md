@@ -33,7 +33,7 @@ A structured threat model helps identify and mitigate these risks **before** pro
 
 The following architecture represents a common **serverless GenAI inference flow on AWS**.
 
-<pre>```mermaid
+```mermaid
 graph TD
   User -->|HTTPS| CloudFront
   CloudFront --> WAF
@@ -41,4 +41,4 @@ graph TD
   API_Gateway --> Lambda
   Lambda -->|Invoke| Bedrock
   Lambda --> DynamoDB
-```</pre>
+```
