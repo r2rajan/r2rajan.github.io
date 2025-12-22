@@ -14,14 +14,17 @@ layout: null
     <main id="main" role="main">
       {{ content }}
     </main>
-
-    {% include_cached footer.html %}
+    
+    {% include sidebar-categories.html %}
 
     {% if page.mermaid %}
       {% include mermaid.html %}
     {% endif %}
+    
+    {% include_cached footer.html %}
 
-    {% include sidebar-categories.html %}
+
+
   </body>
 </html>
 
