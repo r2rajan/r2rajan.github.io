@@ -3,24 +3,27 @@
   <head>
     {% include head.html %}
   </head>
-  
-  <body class="site">
-    <div class="wrtapper"/>
-        <!-- Sidebar -->
-          <aside id="sidebar" class="sidebar">
-            {% include author-profile.html %}
-            {% include sidebar-categories.html %}
-          </aside>
-    
-          <main id="main" role="main">
-            {{ content }}
-          </main>
 
-    {% if page.mermaid %}
-      {% include mermaid.html %}
-    {% endif %}
-    
-     </div>
+  <body class="site">
+    <div class="wrapper">
+
+      <!-- Sidebar -->
+      <aside id="sidebar" class="sidebar">
+        {% include author-profile.html %}
+        {% include sidebar-categories.html %}
+      </aside>
+
+      <!-- Main content -->
+      <main id="main" role="main" class="content">
+        {{ content }}
+
+        {% if page.mermaid %}
+          {% include mermaid.html %}
+        {% endif %}
+      </main>
+
+    </div>
+
     {% include_cached footer.html %}
   </body>
 </html>
