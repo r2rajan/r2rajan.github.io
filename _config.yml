@@ -62,6 +62,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-archives
+
+# Archives to render category links
+jekyll-archives:
+  enabled: ["categories"]
+  layout: "archive"
+  permalinks:
+    category: /categories/:name/
 
 defaults:
   - scope:
