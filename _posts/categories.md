@@ -1,7 +1,7 @@
 ---
 title: "Categories"
 permalink: /categories/
-layout: categories
+layout: page
 sidebar:
   nav: "categories"
 ---
