@@ -1,3 +1,68 @@
 theme: jekyll-theme-minimal
 title: Ramesh's homepage
 description: Bookmark this to keep an eye on my project updates!
+
+# Site settings
+title: "Ramesh's Security and Technlogy Blogs"
+description: "Thoughts on cloud, security, AI, and technology"
+url: "https://r2rajan.github.io"
+baseurl: "" # leave empty for user/organization sites
+
+author:
+  name: "Ramesh Rajan"
+  email: "info@rameshrajan.info"
+
+# Theme (GitHub Pages supported)
+theme: minima
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+# Pagination (supported by GitHub Pages)
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Plugins (ONLY GitHub Pages–supported plugins)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "Ramesh Rajan"
+      comments: true
+
+# SEO
+seo:
+  type: Blog
+
+# Social links (used by minima + SEO plugin)
+social_links:
+  github: r2rajan
+  linkedin: rrajan
+
+# Feed
+feed:
+  path: atom.xml
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
