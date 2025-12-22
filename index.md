@@ -21,24 +21,24 @@ show_sidebar: true
 
 ## Explore Topics
 
-<div class="category-cards">
+<div class="grid-row category-cards">
 
-<div class="card">
-  <h3>Cloud</h3>
+<div class="grid-item card">
+  <h3>AI</h3>
   <p>Articles on **AWS, serverless architectures, cloud strategies, and modern infrastructure design**.</p>
-  <a href="{{ '/categories/cloud/' | relative_url }}">Explore Cloud →</a>
+  <a href="{{ '/categories/ai/' | relative_url }}">Explore Cloud →</a>
 </div>
 
-<div class="card">
+<div class="grid-item card">
   <h3>Security</h3>
   <p>Insights into **security architectures, governance, and cloud security strategies**.</p>
   <a href="{{ '/categories/security/' | relative_url }}">Explore Security →</a>
 </div>
 
-<div class="card">
-  <h3>AI</h3>
+<div class="grid-item card">
+  <h3>Cloud</h3>
   <p>Posts on **AI/ML technologies, LLM applications, and integrating AI into cloud solutions**.</p>
-  <a href="{{ '/categories/ai/' | relative_url }}">Explore AI →</a>
+  <a href="{{ '/categories/cloud/' | relative_url }}">Explore AI →</a>
 </div>
 
 </div>
