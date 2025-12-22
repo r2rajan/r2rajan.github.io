@@ -9,7 +9,8 @@ show_sidebar: true
   <img class="avatar" src="/assets/images/avatar.jpg" alt="Ramesh Rajan">
   <div class="hero-text">
     <h1>Ramesh Rajan</h1>
-    <p> Clodu & Security Architect | 20+ years Experience | Speacilized in <strong> GenAI, Security and Cloud </strong></p>
+    <p> Cloud & Security Architect | 20+ years Experience | Speacilized in <strong> GenAI, Security and Cloud </strong></p>
+    <p> Strategic Advisor to C-suite stakeholders, Translating blockers into enablers for the business </p>
     <p>
       <a href="https://github.com/r2rajan">GitHub</a> |
       <a href="https://linkedin.com/in/rrajan">LinkedIn</a>
