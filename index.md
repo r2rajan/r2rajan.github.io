@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "Ramesh Rajan | Cloud, Security & AI Insights"
 permalink: /
 show_sidebar: true
