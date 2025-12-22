@@ -3,8 +3,6 @@ title: "Threat Modeling an AI Inference Pipeline on AWS"
 excerpt: "A practical, security-first walkthrough of threat modeling a GenAI inference pipeline using AWS-native controls."
 categories:
   - security
-  - ai
-  - cloud
 tags:
   - aws
   - genai
