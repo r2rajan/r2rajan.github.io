@@ -33,6 +33,13 @@ syntax_highlighter: rouge
 syntax_highlighter_opts:
   span:
     line_numbers: false
+    
+# Navigation and Sidebar
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Categories"
+    url: /categories/
 
 # Pagination (supported by GitHub Pages)
 paginate: 5
