@@ -33,7 +33,7 @@ hide_title: true
 
 <div class="grid-item card">
   <h3>Security</h3>
-  <p>Insights into **security architectures, governance, and cloud security strategies</p>
+  <p>Insights into security architectures, governance, and cloud security strategies</p>
   <a href="{{ '/categories/security/' | relative_url }}">Explore Security →</a>
 </div>
 
