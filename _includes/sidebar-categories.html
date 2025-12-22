@@ -1,7 +1,10 @@
-<ul>
-{% for cat in site.data.categories %}
-  <li>
-    <a href="{{ '/categories/' | append: cat | relative_url }}">{{ cat | capitalize }}</a>
-  </li>
-{% endfor %}
+<h4>Categories</h4>
+<ul class="sidebar-links">
+  {% for cat in site.categories %}
+    <li>
+      <a href="{{ '/categories/' | append: cat[0] | relative_url }}">
+        {{ cat[0] | capitalize }} ({{ cat[1].size }})
+      </a>
+    </li>
+  {% endfor %}
 </ul>
