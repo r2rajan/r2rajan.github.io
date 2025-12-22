@@ -42,3 +42,10 @@ graph TD
   Lambda -->|Invoke| Bedrock
   Lambda --> DynamoDB
 ```
+
+<div class="mermaid">
+graph TD
+  A-->B
+  B-->C
+</div>
+
