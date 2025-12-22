@@ -64,3 +64,30 @@
 .latest-posts .post-card p {
   margin: 0;
 }
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: #f5f8fa;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero-banner .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0366d6;
+}
+
+.hero-text h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  margin: 0.25rem 0;
+}
