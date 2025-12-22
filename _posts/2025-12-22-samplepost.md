@@ -42,10 +42,14 @@ graph TD
   Lambda -->|Invoke| Bedrock
   Lambda --> DynamoDB
 ```
-
 <div class="mermaid">
 graph TD
-  A-->B
-  B-->C
+  User -->|HTTPS| CloudFront
+  CloudFront --> WAF
+  WAF --> API_Gateway
+  API_Gateway --> Lambda
+  Lambda -->|Invoke| Bedrock
+  Lambda --> DynamoDB
 </div>
+
 
