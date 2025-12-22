@@ -19,7 +19,6 @@ author:
       url: "https://linkedin.com/in/rrajan"
 
 # Theme (GitHub Pages supported)
-#theme: "mmistakes/minimal-mistakes"
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "aqua" # air, aqua, contrast, dark, dirt, neon, mint
 
@@ -27,6 +26,13 @@ minimal_mistakes_skin: "aqua" # air, aqua, contrast, dark, dirt, neon, mint
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:year/:month/:day/:title/
+
+# Kramdown 
+input: GFM
+syntax_highlighter: rouge
+syntax_highlighter_opts:
+  span:
+    line_numbers: false
 
 # Pagination (supported by GitHub Pages)
 paginate: 5
