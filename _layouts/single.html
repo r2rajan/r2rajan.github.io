@@ -1,4 +1,26 @@
-<aside id="sidebar" class="sidebar">
-  {% include author-profile.html %}
-  {% include sidebar-categories.html %}
-</aside>
+<!DOCTYPE html>
+<html lang="{{ site.locale | default: 'en' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  
+  <body class="site">
+    <div class="wrtapper"/>
+        <!-- Sidebar -->
+          <aside id="sidebar" class="sidebar">
+            {% include author-profile.html %}
+            {% include sidebar-categories.html %}
+          </aside>
+    
+          <main id="main" role="main">
+            {{ content }}
+          </main>
+
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+    
+     </div>
+    {% include_cached footer.html %}
+  </body>
+</html>
