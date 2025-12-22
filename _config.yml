@@ -41,6 +41,11 @@ navigation:
   - title: "Categories"
     url: /categories/
 
+# Sidebar settings
+show_sidebar: true
+sidebar:
+  nav: categories
+
 # Pagination (supported by GitHub Pages)
 paginate: 5
 paginate_path: "/page/:num/"
