@@ -25,8 +25,8 @@ show_sidebar: true
 
 <div class="grid-item card">
   <h3>AI</h3>
-  <p>Articles on **AWS, serverless architectures, cloud strategies, and modern infrastructure design**.</p>
-  <a href="{{ '/categories/ai/' | relative_url }}">Explore Cloud →</a>
+  <p>Posts on **AI/ML technologies, LLM applications, and integrating AI into cloud solutions**</p>
+  <a href="{{ '/categories/ai/' | relative_url }}">Explore AI →</a>
 </div>
 
 <div class="grid-item card">
@@ -37,8 +37,8 @@ show_sidebar: true
 
 <div class="grid-item card">
   <h3>Cloud</h3>
-  <p>Posts on **AI/ML technologies, LLM applications, and integrating AI into cloud solutions**.</p>
-  <a href="{{ '/categories/cloud/' | relative_url }}">Explore AI →</a>
+  <p>Articles on **AWS, serverless architectures, cloud strategies, and modern infrastructure design**</p>
+  <a href="{{ '/categories/cloud/' | relative_url }}">Explore Cloud →</a>
 </div>
 
 </div>
