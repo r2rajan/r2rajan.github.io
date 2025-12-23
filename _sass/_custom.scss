@@ -11,6 +11,8 @@
 .sidebar {
   width: 250px;              // adjust width as needed
   flex-shrink: 0;            // prevents sidebar from shrinking
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .content {
