@@ -7,7 +7,6 @@
   margin: 0 auto;       // center the wrapper
 }
 
-
 .sidebar {
   width: 250px;              // adjust width as needed
   flex-shrink: 0;            // prevents sidebar from shrinking
@@ -23,11 +22,16 @@
 .site-footer {
   max-width: 300px;     // match your main content width
   margin: 0 auto;        // center horizontally
-  padding: 2rem 1rem;
+  padding: 1rem 0;
   border-top: 1px solid #e0e0e0;
   font-size: 0.9rem;
   color: #555;
   background-color: #f5f8fa;
+}
+
+.site-footer .page-inner {
+  max-width: 1200px;        // align footer with main content
+  margin: 0 auto;
 }
 
 .footer-links {
