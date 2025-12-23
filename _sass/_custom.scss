@@ -20,18 +20,29 @@
 }
 
 .site-footer {
-  max-width: 300px;     // match your main content width
-  margin: 0 auto;        // center horizontally
-  padding: 1rem 0;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.9rem;
-  color: #555;
-  background-color: #f5f8fa;
+  padding: 0 !important;
 }
 
 .site-footer .page-inner {
-  max-width: 1200px;        // align footer with main content
+  padding: 0.75rem 1rem !important;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.site-footer__inner {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.site-footer p,
+.site-footer ul,
+.site-footer li {
+  margin: 0.25rem 0 !important;
+}
+
+.site-footer {
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 .footer-links {
