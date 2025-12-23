@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "AI"
+title: "AII"
 archive_type: category
 category: ai
 permalink: /categories/ai/
