@@ -3,7 +3,7 @@ layout: archive
 title: "AI"
 archive_type: category
 category: ai
-permalink: /categories/ai/
+permalink: /categories/aii/
 paginate: 5         # optional, controls posts per page
 show_date: true      # optional
 show_excerpt: true   # optional
