@@ -1,10 +1,12 @@
-
 .wrapper {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;  // ensures sidebar and content align at top
-  gap: 2rem;                // spacing between sidebar and main content
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;   // allow wider content
+  margin: 0 auto;       // center the wrapper
 }
+
 
 .sidebar {
   width: 250px;              // adjust width as needed
@@ -12,7 +14,8 @@
 }
 
 .content {
-  flex: 1;                   // main content takes remaining space
+  flex: 1 1 auto;                   // main content takes remaining space
+  min-width: 0;                     // prevents overflow issues
 }
 
 .site-footer {
@@ -66,13 +69,13 @@
 /* Category Cards */
 .category-cards {
   display: flex;
-  flex-wrap: nowrap; /* single row */
+  flex-wrap: wrap; /* single row */
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .category-cards .card {
-  flex: 1;
+  flex: 1 1 200px;
   min-width: 200px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
