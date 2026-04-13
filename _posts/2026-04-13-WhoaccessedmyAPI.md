@@ -26,7 +26,7 @@ This post explains why delegation with dual identity is the correct model for ag
 
 In the impersonation model, the agent receives the user's access token and presents it directly to downstream services. The service sees the user's identity and grants access based on the user's permissions.
 
-![Agent Impersonation Pattern](../assets/images/blog-1-impersonation-pattern.png)
+![Agent Impersonation Pattern](/assets/images/blog-1-impersonation-pattern.png)
 
 The token that reaches the downstream service looks like this:
 
@@ -52,7 +52,7 @@ Third, revoking the agent's access requires revoking Alice's token, which locks 
 
 In the delegation model, the agent does not forward the user's token. Instead, it presents both the user's token and its own identity to a token exchange service. The service issues a new token that carries both identities: who authorized the action (the user) and who performed it (the agent).
 
-![Agent Delegation Pattern](../assets/images/blog-2-delegation-pattern.png)
+![Agent Delegation Pattern](/assets/images/blog-2-delegation-pattern.png)
 
 The delegated token carries dual identity:
 
@@ -78,7 +78,7 @@ The downstream service now has everything it needs: authorize based on `sub`, at
 
 RFC 8693 defines OAuth 2.0 Token Exchange, a standard protocol for exchanging one security token for another. It is the mechanism that turns impersonation into delegation.
 
-![RFC 8693 Token Exchange Flow](../assets/images/blog-3-rfc8693-token-exchange.png)
+![RFC 8693 Token Exchange Flow](/assets/images/blog-3-rfc8693-token-exchange.png)
 
 The exchange takes two inputs:
 
