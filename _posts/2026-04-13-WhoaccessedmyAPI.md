@@ -16,9 +16,9 @@ sidebar:
 ---
 # Who Called That API? Why AI Agents Need Delegation, Not Impersonation
 
-When an AI agent accesses a service on behalf of a user, who shows up in the audit log? If the answer is "just the user" or "just the agent," you have a gap that will surface during your next security review.
+When an AI agent accesses a service on behalf of a user, who shows up in the audit log? If the answer is **just the user** or **just the agent**, you have a gap that will surface during your next security review.
 
-Most agentic platforms today use one of two flawed patterns: the agent impersonates the user (forwarding their token directly), or the agent authenticates as itself with no link to the user who initiated the request. Both patterns break down when you need to answer the question every incident responder asks, who did what? When AI agents are acting on behalf of a human user or another agent, you also need to ask another question. Through which system did they do it?
+Most agentic platforms today use one of two flawed patterns: the agent impersonates the user (forwarding their token directly), or the agent authenticates as itself with no link to the user who initiated the request. Both patterns break down when you need to answer the question every incident responder asks, **who did what?** When AI agents are acting on behalf of a human user or another agent, you also need to ask another question. **Through which system did they do it?**
 
 This post explains why delegation with dual identity is the correct model for agentic systems, and how OAuth 2.0 Token Exchange (RFC 8693) provides the standard to implement it.
 
@@ -121,12 +121,10 @@ The response is a new token with the dual-identity structure shown above. The to
 | Incident response | Cannot distinguish human from agent actions | Full attribution chain |
 | Token lifetime | Matches user session (minutes to hours) | Short-lived (5 minutes), auto-refreshed |
 
-## What This Means for Your Platform
+## Conclusion
 
 If you are building an agentic platform where AI agents call services on behalf of users, the identity model you choose determines whether your audit trails hold up under scrutiny.
 
 Impersonation is simpler to implement. Forward the user's token and move on. But it creates a blind spot in every audit log, grants agents more permissions than they need, and couples agent lifecycle to user credentials.
 
-Delegation with RFC 8693 requires a token exchange service and per-service audience management. The operational cost is higher. But it gives you individual attribution on every call, least-privilege enforcement at the token level, and independent revocation of agent and user identities.
-
-For security-sensitive environments where compliance, auditability, and least-privilege access are requirements, RFC 8693 token exchange is the foundation to build on.
+Delegation with RFC 8693 requires a token exchange service and per-service audience management. The operational overhead is higher. But it gives you individual attribution on every call, least-privilege enforcement at the token level, and independent revocation of agent and user identities. For security-sensitive environments where compliance, auditability, and least-privilege access are requirements, RFC 8693 token exchange is the foundation to build on.
