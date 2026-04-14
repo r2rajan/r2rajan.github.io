@@ -1,3 +1,8 @@
+/* Base Layout */
+.page-inner {
+  overflow-x: hidden; // prevent horizontal scroll
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -5,6 +10,7 @@
   gap: 2rem;
   max-width: 1200px;   // allow wider content
   margin: 0 auto;       // center the wrapper
+  width: 100%;          // ensure full width usage
 }
 
 .sidebar {
@@ -17,6 +23,8 @@
 .content {
   flex: 1 1 auto;                   // main content takes remaining space
   min-width: 0;                     // prevents overflow issues
+  max-width: 100%;                  // prevent overflow
+  overflow-wrap: break-word;        // break long words
 }
 
 .site-footer {
@@ -134,14 +142,93 @@
   margin: 0;
 }
 
-/* Responsive */
+/* Mobile-friendly images */
+.content img,
+.post-card img,
+.hero-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Mobile Support */
 @media (max-width: 768px) {
+  /* Stack sidebar below content on mobile */
+  .wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2; /* Move sidebar after main content */
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Hero adjustments */
   .hero-banner {
     flex-direction: column;
     text-align: center;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
   }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-banner .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Category cards full width on mobile */
   .category-cards {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .category-cards .card {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  /* Ensure proper touch targets (44px minimum) */
+  .author__urls.social-icons li a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .sidebar-links li a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    width: 200px;
   }
 }
 
