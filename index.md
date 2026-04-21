@@ -28,7 +28,7 @@ hide_title: true
 <div class="grid-item card">
   <h3>AI</h3>
   <p>Posts on AI/ML technologies, LLM applications, and integrating AI into cloud solutions </p>
-  <a href="{{ '/categories/ai/' | relative_url }}">Explore AI →</a>
+  <a href="{{ '/categories/AI/' | relative_url }}">Explore AI →</a>
 </div>
 
 <div class="grid-item card">
