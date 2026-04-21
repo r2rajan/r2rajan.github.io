@@ -20,7 +20,7 @@ sidebar:
 
 In the [previous post](/agentic%20identity/2026/04/13/WhoaccessedmyAPI/), Alice had a token with exactly the right scopes, and reporting-agent exchanged it for a narrower delegated token before calling downstream services. The whole flow **assumed** that first token already existed and already carried the **right scopes**.
 
-This post rewinds to the step before that. How did Alice actually authorize reporting-agent to act for her? And what changes when she adds a second agent, coding-agent, that needs a completely different set of permissions? If consent is wrong here, every downstream token carries the mistake with it.
+This post rewinds to the step before that. How did Alice actually authorize **reporting-agent** to act for her? And what changes when she adds a second agent, **coding-agent**, that needs a completely different set of permissions? If consent is wrong here, every downstream token carries the mistake with it.
 
 ## Why OAuth Consent Wasn't Designed for Agents
 
@@ -48,12 +48,9 @@ This matters for four reasons.
 
 **Revocation is scoped**. If coding-agent is compromised, you revoke its client registration and every token tied to it. Reporting-agent keeps working. Alice doesn't get logged out.
 
-**Scope ceilings are independent**. Reporting-agent's client is registered with a maximum scope set of ```markdown
-`reports:read`
-```. Coding-agent's client has `code:read code:write`. Neither can ever request a scope it wasn't registered for, regardless of what Alice approves at runtime.
+**Scope ceilings are independent**. Reporting-agent's client is registered with a maximum scope set of `reports:read`. Coding-agent's client has `code:read code:write`. Neither can ever request a scope it wasn't registered for, regardless of what Alice approves at runtime.
 
 **Audit attribution is clean**. Every log line carries the specific client ID of the agent that made the call, not a shared identifier that spreads attribution across the whole fleet.
-
 
 
 A registered agent client looks roughly like this:
@@ -105,7 +102,7 @@ Agents change. Six weeks after Alice first approved coding-agent, the agent's ca
 
 You have two options.
 
-Prompt for the delta. The agent initiates a new authorization request that includes only the new scope. The consent screen shows Alice what is changing: "Coding Agent is requesting a new permission: trigger deployments." She approves, and the refresh token is upgraded, or a second token is issued alongside the first.
+**Prompt for the delta:** The agent initiates a new authorization request that includes only the new scope. The consent screen shows Alice what is changing: "Coding Agent is requesting a new permission: trigger deployments." She approves, and the refresh token is upgraded, or a second token is issued alongside the first.
 
 ```
 GET /authorize
@@ -118,23 +115,22 @@ GET /authorize
 
 ![Incremental consent delta](/assets/images/20260421/3-incremental-consent-delta.png)
 
-Force full re-consent. For sensitive scope escalations, anything that moves the agent from read to write or touches production systems, requiring a fresh grant from scratch makes the decision visible rather than incremental. The UX cost is real, but so is the risk of scope creep through small, easily-approved increments.
+**Force full re-consent:** For sensitive scope escalations, anything that moves the agent from read to write or touches production systems, requiring a fresh grant from scratch makes the decision visible rather than incremental. The UX cost is real, but so is the risk of scope creep through small, easily-approved increments.
 
-A defensible policy: allow delta consent for same-tier scopes, force full re-consent when crossing a sensitivity boundary (read to write, non-prod to prod, internal to external data). Record the consent decisions with timestamps and scope deltas so you can reconstruct how an agent's permissions evolved.
+**A defensible policy**: Allow delta consent for same-tier scopes, force full re-consent when crossing a sensitivity boundary (read to write, non-prod to prod, internal to external data). Record the consent decisions with timestamps and scope deltas so you can reconstruct how an agent's permissions evolved.
 
-## Standing vs. Task-Scoped Authorization
+## Standing Authorization vs. Task-Scoped Authorization
 
 Consent comes in two shapes, and agentic platforms need both.
 
+**Standing authorization** is the default most teams reach for. Think of it like setting up ACH autopay for your homeowners association (HOA) dues. You authorize the HOA once to pull a fixed amount from your bank account every month. The payments run on schedule without you approving each one. You set the ceiling (the monthly amount), and the HOA operates within it indefinitely until you revoke the mandate. That is exactly how standing authorization works for agents. Alice grants reporting-agent a refresh token valid for 90 days. The agent runs on a schedule, exchanges the refresh token for short-lived access tokens, and does its work without Alice being involved. This is the right model when the agent's task is ongoing and the scope is stable.
+
 ![Standing vs. Task-Scoped Authorization](/assets/images/20260421/4-standing-scoped-authorization.png)
 
-Standing authorization is the default most teams reach for. Think of it like setting up ACH autopay for your homeowners association dues. You authorize the HOA once to pull a fixed amount from your bank account every month. The payments run on schedule without you approving each one. You set the ceiling (the monthly amount), and the HOA operates within it indefinitely until you revoke the mandate. That is exactly how standing authorization works for agents. Alice grants reporting-agent a refresh token valid for 90 days. The agent runs on a schedule, exchanges the refresh token for short-lived access tokens, and does its work without Alice being involved. This is the right model when the agent's task is ongoing and the scope is stable.
-
-Task-scoped authorization is narrower. Think of the one-time password your bank sends to your phone when you initiate a wire transfer. The OTP is bound to that specific transaction, expires in minutes, and cannot be reused for a second transfer. You need a fresh code each time. That is task-scoped authorization. Alice is in a chat session with coding-agent and asks it to deploy a specific branch to staging. The agent requests a grant bound to this session and this task: short TTL, single-use refresh, tied to a session ID in the grant metadata. When the session ends, the grant is dead. This is the right model for high-risk, user-present actions where standing authority would be excessive.
+**Task-scoped authorization** is narrower. Think of the one-time password your bank sends to your phone when you initiate a wire transfer. The OTP is bound to that specific transaction, expires in minutes, and cannot be reused for a second transfer. You need a fresh code each time. That is task-scoped authorization. Alice is in a chat session with coding-agent and asks it to deploy a specific branch to staging. The agent requests a grant bound to this session and this task: short TTL, single-use refresh, tied to a session ID in the grant metadata. When the session ends, the grant is dead. This is the right model for high-risk, user-present actions where standing authority would be excessive.
 
 The two compose. The coding-agent might hold a standing grant for `code:read code:write` and request task-scoped grants on top of it for sensitive operations like `deployments:trigger`. The standing grant handles the common case; the task-scoped grant handles the exception that needs a fresh "yes" from Alice.
 
-There is a third case: agents running with no user present at all, like a scheduled agent that triggers at 2am. Standing authorization gets you partway there, but the model starts to strain when the human is fully out of the loop. The next post in this series takes that case head-on.
 
 ## Comparing the Two Client Models
 
@@ -152,3 +148,4 @@ The delegation pattern from the previous post is only as strong as the consent t
 
 Per-agent client registrations, explicit scope ceilings, incremental consent for evolving capabilities, and a clear line between standing and task-scoped grants give Alice real control and give your security team something defensible when someone asks how an agent came to hold the permissions it did.
 
+**There is a third case** where agents running with no user present at all, like a scheduled agent that triggers at 2am. Standing authorization gets you partway there, but the model starts to strain when the human is fully out of the loop. Watch out for the next post in this series.
