@@ -40,7 +40,7 @@ Fixing this doesn't require a new protocol. It requires using OAuth more deliber
 
 The first fix is the most important: reporting-agent and coding-agent each get their own OAuth client registration. Not a single shared "agent platform" client that every agent authenticates through.
 
-![Per-agent client registration](/assets/images/1-per-agent-client-registration.png)
+![Per-agent client registration](/assets/images/20260421/1-per-agent-client-registration.png)
 
 This matters for four reasons.
 
@@ -48,7 +48,9 @@ This matters for four reasons.
 
 **Revocation is scoped**. If coding-agent is compromised, you revoke its client registration and every token tied to it. Reporting-agent keeps working. Alice doesn't get logged out.
 
-**Scope ceilings are independent**. Reporting-agent's client is registered with a maximum scope set of > `reports:read`. Coding-agent's client has > `code:read code:write`. Neither can ever request a scope it wasn't registered for, regardless of what Alice approves at runtime.
+**Scope ceilings are independent**. Reporting-agent's client is registered with a maximum scope set of ```markdown
+`reports:read`
+```. Coding-agent's client has `code:read code:write`. Neither can ever request a scope it wasn't registered for, regardless of what Alice approves at runtime.
 
 **Audit attribution is clean**. Every log line carries the specific client ID of the agent that made the call, not a shared identifier that spreads attribution across the whole fleet.
 
@@ -70,13 +72,13 @@ A registered agent client looks roughly like this:
 }
 ```
 
-The > `agent_metadata` block is a custom extension. IdPs like Entra ID, Okta, and Cognito let you attach arbitrary metadata to client registrations, and it becomes useful later for policy decisions and incident response.
+The `agent_metadata` block is a custom extension. IdPs like Entra ID, Okta, and Cognito let you attach arbitrary metadata to client registrations, and it becomes useful later for policy decisions and incident response.
 
 ## The Consent Grant: What Alice Actually Approves
 
 With per-agent clients in place, each agent runs its own authorization code flow. Alice sees a distinct consent screen for each one, and grants a distinct set of scopes.
 
-![Side-by-side consent flow for two agents](/assets/images/2-dual-agent-consent-flow.png)
+![Side-by-side consent flow for two agents](/assets/images/20260421/2-dual-agent-consent-flow.png)
 
 For reporting-agent, the authorization request looks like this:
 
@@ -114,7 +116,7 @@ GET /authorize
   &state=abc456
 ```
 
-![Incremental consent delta](/assets/images/3-incremental-consent-delta.png)
+![Incremental consent delta](/assets/images/20260421/3-incremental-consent-delta.png)
 
 Force full re-consent. For sensitive scope escalations, anything that moves the agent from read to write or touches production systems, requiring a fresh grant from scratch makes the decision visible rather than incremental. The UX cost is real, but so is the risk of scope creep through small, easily-approved increments.
 
@@ -124,7 +126,7 @@ A defensible policy: allow delta consent for same-tier scopes, force full re-con
 
 Consent comes in two shapes, and agentic platforms need both.
 
-![Standing vs. Task-Scoped Authorization](/assets/images/4-standing-scoped-authorization.png)
+![Standing vs. Task-Scoped Authorization](/assets/images/20260421/4-standing-scoped-authorization.png)
 
 Standing authorization is the default most teams reach for. Think of it like setting up ACH autopay for your homeowners association dues. You authorize the HOA once to pull a fixed amount from your bank account every month. The payments run on schedule without you approving each one. You set the ceiling (the monthly amount), and the HOA operates within it indefinitely until you revoke the mandate. That is exactly how standing authorization works for agents. Alice grants reporting-agent a refresh token valid for 90 days. The agent runs on a schedule, exchanges the refresh token for short-lived access tokens, and does its work without Alice being involved. This is the right model when the agent's task is ongoing and the scope is stable.
 
