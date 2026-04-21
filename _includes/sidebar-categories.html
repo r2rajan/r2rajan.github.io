@@ -1,6 +1,6 @@
 <h4>Categories</h4>
 <ul class="sidebar-links">
-  {% assign top_cats = "security,cloud,AI" | split: "," %}
+  {% assign top_cats = "security,cloud,AI,Agentic Identity" | split: "," %}
   {% for cat in site.categories %}
     {% if top_cats contains cat[0] %}
       <li>

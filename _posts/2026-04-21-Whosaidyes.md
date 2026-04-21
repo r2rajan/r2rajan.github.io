@@ -18,7 +18,7 @@ sidebar:
 
 # Who Said Yes? Designing User Consent for AI Agents
 
-In the [previous post](/agentic%20identity/2026/04/13/WhoaccessedmyAPI/), Alice had a token with exactly the right scopes, and reporting-agent exchanged it for a narrower delegated token before calling downstream services. The whole flow assumed that first token already existed and already carried the right scopes.
+In the [previous post](/agentic%20identity/2026/04/13/WhoaccessedmyAPI/), Alice had a token with exactly the right scopes, and reporting-agent exchanged it for a narrower delegated token before calling downstream services. The whole flow **assumed** that first token already existed and already carried the **right scopes**.
 
 This post rewinds to the step before that. How did Alice actually authorize reporting-agent to act for her? And what changes when she adds a second agent, coding-agent, that needs a completely different set of permissions? If consent is wrong here, every downstream token carries the mistake with it.
 
@@ -28,11 +28,11 @@ The OAuth 2.0 authorization code flow was designed for a specific scenario: a hu
 
 Agents break three of those assumptions.
 
-They are long-lived. Alice approves reporting-agent once and it runs for months, often without her watching.
+**Agents can be long-lived**. Alice approves reporting-agent once and it runs for months, often without her watching.
 
-They accumulate capabilities. Coding-agent might start out reading code, then later need to open pull requests, then later need to trigger deployments. Each of those is a different scope.
+**Agents can  accumulate capabilities**. Coding-agent might start out reading code, then later need to open pull requests, then later need to trigger deployments. Each of those is a different scope.
 
-They come in populations. Alice doesn't use one agent. She uses several, each with different purposes, different risk profiles, and different permission needs. The standard consent screen gives her no way to tell reporting-agent from coding-agent from the dozen other agents her team has rolled out.
+**Agents come in populations**. Alice doesn't use one agent. She uses several, each with different purposes, different risk profiles, and different permission needs. The standard consent screen gives her no way to tell reporting-agent from coding-agent from the dozen other agents her team has rolled out.
 
 Fixing this doesn't require a new protocol. It requires using OAuth more deliberately.
 
@@ -44,13 +44,15 @@ The first fix is the most important: reporting-agent and coding-agent each get t
 
 This matters for four reasons.
 
-Revocation is scoped. If coding-agent is compromised, you revoke its client registration and every token tied to it. Reporting-agent keeps working. Alice doesn't get logged out.
+**Onboarding is automated**. RFC 7591 Dynamic Client Registration (DCR) lets an agent platform register new clients programmatically when a new agent is deployed. You attach metadata (owner, agent type, declared capabilities, lifecycle state) and treat the client registry as your source of truth for what agents exist and what they are allowed to ask for.
 
-Scope ceilings are independent. Reporting-agent's client is registered with a maximum scope set of `reports:read`. Coding-agent's client has `code:read code:write`. Neither can ever request a scope it wasn't registered for, regardless of what Alice approves at runtime.
+**Revocation is scoped**. If coding-agent is compromised, you revoke its client registration and every token tied to it. Reporting-agent keeps working. Alice doesn't get logged out.
 
-Audit attribution is clean. Every log line carries the specific client ID of the agent that made the call, not a shared identifier that spreads attribution across the whole fleet.
+**Scope ceilings are independent**. Reporting-agent's client is registered with a maximum scope set of > `reports:read`. Coding-agent's client has > `code:read code:write`. Neither can ever request a scope it wasn't registered for, regardless of what Alice approves at runtime.
 
-Onboarding is automated. RFC 7591 Dynamic Client Registration (DCR) lets an agent platform register new clients programmatically when a new agent is deployed. You attach metadata (owner, agent type, declared capabilities, lifecycle state) and treat the client registry as your source of truth for what agents exist and what they are allowed to ask for.
+**Audit attribution is clean**. Every log line carries the specific client ID of the agent that made the call, not a shared identifier that spreads attribution across the whole fleet.
+
+
 
 A registered agent client looks roughly like this:
 
@@ -68,7 +70,7 @@ A registered agent client looks roughly like this:
 }
 ```
 
-The `agent_metadata` block is a custom extension. IdPs like Entra ID, Okta, and Cognito let you attach arbitrary metadata to client registrations, and it becomes useful later for policy decisions and incident response.
+The > `agent_metadata` block is a custom extension. IdPs like Entra ID, Okta, and Cognito let you attach arbitrary metadata to client registrations, and it becomes useful later for policy decisions and incident response.
 
 ## The Consent Grant: What Alice Actually Approves
 
