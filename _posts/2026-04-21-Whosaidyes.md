@@ -19,7 +19,7 @@ sidebar:
 
 # Who Said Yes? Designing User Consent for AI Agents
 
-In the [previous post](/agentic identity/2026/04/13/WhoaccessedmyAPI/), Alice had a token with exactly the right scopes, and reporting-agent exchanged it for a narrower delegated token before calling downstream services. The whole flow **assumed** that first token already existed and already carried the **right scopes**.
+In the [previous post](/agentic identity/ai/2026/04/13/WhoaccessedmyAPI/), Alice had a token with exactly the right scopes, and reporting-agent exchanged it for a narrower delegated token before calling downstream services. The whole flow **assumed** that first token already existed and already carried the **right scopes**.
 
 This post rewinds to the step before that. How did Alice actually authorize **reporting-agent** to act for her? And what changes when she adds a second agent, **coding-agent**, that needs a completely different set of permissions? If consent is wrong here, every downstream token carries the mistake with it.
 
