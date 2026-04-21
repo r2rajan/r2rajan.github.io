@@ -32,7 +32,7 @@ Connect with me on [GitHub](https://github.com/r2rajan) or [LinkedIn](https://li
 <div class="card">
   <h3>AI</h3>
   <p>Posts on **AI/ML technologies, LLM applications, and integrating AI into cloud solutions**.</p>
-  <a href="/categories/ai/">Explore AI →</a>
+  <a href="/categories/AI/">Explore AI →</a>
 </div>
 
 </div>
