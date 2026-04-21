@@ -3,6 +3,7 @@ title: "Who Said Yes? Designing User Consent for AI Agents"
 excerpt: "OAuth consent wasn't built for long-lived agents that accumulate capabilities over time. Per-agent client registration, incremental consent, and the distinction between standing and task-scoped authorization give users real control without requiring approval for every API call."
 categories:
   - Agentic Identity
+  - AI
 tags:
   - genai
   - AI

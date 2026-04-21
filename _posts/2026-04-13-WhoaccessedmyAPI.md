@@ -3,6 +3,7 @@ title: "Who Called That API? Why AI Agents Need Delegation, Not Impersonation"
 excerpt: "When an AI agent acts on behalf of a user, your audit log needs to show both identities, not just one. RFC 8693 token exchange makes that possible with scope-narrowed, audience-restricted delegation tokens."
 categories:
   - Agentic Identity
+  - AI
 tags:
   - genai
   - iam
