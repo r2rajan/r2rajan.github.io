@@ -2,8 +2,8 @@
 title: "Designing Workloads for Kinetic Resilience"
 excerpt: "Traditional data center resilience assumes the building survives. Kinetic resilience assumes it does not. Kinetic resilience shifts the unit of survival from the facility to the workload, using geographic distribution, elimination of single points of failure, graceful degradation, and physical hardening to ensure services continue even when the building does not"
 categories:
-  - Cloud
-  - Security
+  - cloud
+  - security
 tags:
   - security
 layout: single
@@ -70,9 +70,9 @@ Multi-region architectures are the strongest foundation for kinetic resilience. 
 
 The next step is ensuring that the regions themselves are distributed across boundaries that matter. Regions that do not share the same power grid, the same government jurisdiction, or the same geopolitical risk profile provide stronger isolation than regions clustered within a single country. A workload running in three regions across two continents is harder to disable through physical attack than one running in three availability zones within the same metropolitan corridor.
 
-The trade-off is latency. Synchronous replication across regions is impractical for latency-sensitive applications. Workloads that require strong consistency need conflict resolution mechanisms, eventual consistency models, or partitioned write domains that allow each region to operate independently while reconciling state asynchronously.
+The trade-off is **latency**. Synchronous replication across regions is impractical for latency-sensitive applications. Workloads that require strong consistency need conflict resolution mechanisms, eventual consistency models, or partitioned write domains that allow each region to operate independently while reconciling state asynchronously.
 
-The other trade-off is regulatory. Data sovereignty laws require that certain categories of data remain within national or regional boundaries. Kinetic resilience does not require ignoring these constraints. It requires designing around them by separating the data layer from the compute and control layers. Regulated data stays within the required jurisdiction. The compute layer distributes across broader boundaries so the system continues to operate even if one jurisdiction's facilities are compromised.
+The other trade-off is **regulatory**. Data sovereignty laws require that certain categories of data remain within national or regional boundaries. Kinetic resilience does not require ignoring these constraints. It requires designing around them by separating the data layer from the compute and control layers. Regulated data stays within the required jurisdiction. The compute layer distributes across broader boundaries so the system continues to operate even if one jurisdiction's facilities are compromised.
 
 
 ![Geographic Distribution: Single-Region Multi-AZ vs Multi-Region](/assets/images/20260502/SingleRegion-MultiRegion.png)
