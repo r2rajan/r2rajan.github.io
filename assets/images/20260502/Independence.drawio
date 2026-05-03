@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="xtojqaAMDpzgXRtcJ8Uq">
+    <mxGraphModel dx="1343" dy="1380" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ring4" parent="1" style="ellipse;fillColor=#E6E6E6;strokeColor=#999999;strokeWidth=2;spacing=2;" value="" vertex="1">
+          <mxGeometry height="382" width="500" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ring4_lbl" parent="1" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#000000;align=center;fontFamily=Architects Daughter;spacing=2;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;Power Grid&lt;/span&gt;" vertex="1">
+          <mxGeometry height="18" width="80" x="307" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ring4_time" parent="1" style="text;html=1;fontSize=13;fontColor=#000000;align=center;fontStyle=2;fontFamily=Helvetica;spacing=2;" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;Lost: 48-72h on diesel + solar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="16" width="237" x="233" y="83" as="geometry" />
+        </mxCell>
+        <mxCell id="ring3" parent="1" style="ellipse;fillColor=#FF99FF;strokeColor=#6c8ebf;strokeWidth=2;spacing=2;" value="" vertex="1">
+          <mxGeometry height="302" width="390" x="155" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="ring3_lbl" parent="1" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#000000;align=center;fontFamily=Architects Daughter;spacing=2;labelBorderColor=none;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;Fuel Supply&lt;/span&gt;" vertex="1">
+          <mxGeometry height="18" width="80" x="305" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ring3_time" parent="1" style="text;html=1;fontSize=13;fontColor=#000000;align=center;fontStyle=2;fontFamily=Helvetica;spacing=2;" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;Lost: 24-48h on reserves&lt;/span&gt;" vertex="1">
+          <mxGeometry height="16" width="150" x="272" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="ring2" parent="1" style="ellipse;fillColor=#F19C99;strokeColor=#d6b656;strokeWidth=2;fontFamily=Architects Daughter;spacing=2;" value="" vertex="1">
+          <mxGeometry height="217" width="280" x="210" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="ring2_lbl" parent="1" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#000000;align=center;fontFamily=Architects Daughter;spacing=2;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;Cooling Water&lt;/span&gt;" vertex="1">
+          <mxGeometry height="18" width="90" x="300" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="ring2_time" parent="1" style="text;html=1;fontSize=13;fontColor=#000000;align=center;fontStyle=2;fontFamily=Helvetica;spacing=2;" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;Lost: 4-8h to thermal shutdown&lt;/span&gt;" vertex="1">
+          <mxGeometry height="16" width="170" x="265" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="ring1" parent="1" style="ellipse;fillColor=#FF8000;strokeColor=#b85450;strokeWidth=2;fontFamily=Architects Daughter;spacing=2;" value="" vertex="1">
+          <mxGeometry height="129" width="170" x="265" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="ring1_lbl" parent="1" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#000000;align=center;fontFamily=Architects Daughter;spacing=2;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;Network&lt;/span&gt;" vertex="1">
+          <mxGeometry height="18" width="70" x="315" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ring1_time" parent="1" style="text;html=1;fontSize=13;fontColor=#000000;align=center;fontStyle=2;fontFamily=Helvetica;spacing=2;" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;Lost: immediate impact&lt;/span&gt;" vertex="1">
+          <mxGeometry height="16" width="130" x="290" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="dc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#33FF33;strokeColor=#9673a6;fontStyle=1;fontSize=15;fontFamily=Architects Daughter;spacing=2;" value="Data&lt;br&gt;Center" vertex="1">
+          <mxGeometry height="50" width="70" x="317" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;fontColor=#000000;spacingTop=1;spacing=2;spacingLeft=0;horizontal=1;" value="&lt;span style=&quot;letter-spacing: 3px; color: rgb(0, 0, 255);&quot;&gt;Independence from External Infrastructure&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="460" x="133" y="-9" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

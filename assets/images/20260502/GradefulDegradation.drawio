@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="JNJJZ_vV7Q_yqsVzR_At">
+    <mxGraphModel dx="1743" dy="1380" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=center;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;Graceful Degradation&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 102, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;Servi&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 128, 0);&quot;&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;ce Tiering Under Constraint&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="86" y="-11" as="geometry" />
+        </mxCell>
+        <mxCell id="h_mode" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;fillColor=#e8e8e8;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="&lt;span style=&quot;letter-spacing: 3px; color: rgb(0, 0, 255);&quot;&gt;Operating Mode&lt;/span&gt;" vertex="1">
+          <mxGeometry height="45" width="233" x="-34" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="h_t1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;fillColor=#e8e8e8;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontColor=#0000FF;" value="Tier 1&lt;br&gt;(Transactions)" vertex="1">
+          <mxGeometry height="46" width="120" x="252" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="h_t2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;fillColor=#e8e8e8;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontColor=#0000FF;" value="Tier 2&lt;br&gt;(Analytics)" vertex="1">
+          <mxGeometry height="46" width="120" x="416" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="h_t3" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;fillColor=#e8e8e8;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontColor=#0000FF;" value="Tier 3&lt;br&gt;(Batch Jobs)" vertex="1">
+          <mxGeometry height="47" width="120" x="591" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_mode" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=left;verticalAlign=middle;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt; Normal&lt;br&gt;(All AZ up)&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="172" x="-34" y="137" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Full" vertex="1">
+          <mxGeometry height="40" width="120" x="252" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Full" vertex="1">
+          <mxGeometry height="40" width="120" x="416" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Full" vertex="1">
+          <mxGeometry height="40" width="120" x="591" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="r2_mode" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=left;verticalAlign=middle;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;Constrained&lt;br&gt;(1 AZ lost)&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="166" x="-31" y="209" as="geometry" />
+        </mxCell>
+        <mxCell id="r2_t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Full" vertex="1">
+          <mxGeometry height="40" width="120" x="250" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="r2_t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Full" vertex="1">
+          <mxGeometry height="40" width="120" x="414" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="r2_t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Reduced" vertex="1">
+          <mxGeometry height="40" width="120" x="589" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="r3_mode" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=left;verticalAlign=middle;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="&lt;span style=&quot;letter-spacing: 3px; color: rgb(0, 0, 255);&quot;&gt;Severely Constrained&lt;br&gt;(All AZs lost)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="-31" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="r3_t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Full" vertex="1">
+          <mxGeometry height="40" width="120" x="250" y="279" as="geometry" />
+        </mxCell>
+        <mxCell id="r3_t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Reduced" vertex="1">
+          <mxGeometry height="40" width="120" x="414" y="279" as="geometry" />
+        </mxCell>
+        <mxCell id="r3_t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=19;" value="Disabled" vertex="1">
+          <mxGeometry height="40" width="120" x="589" y="279" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_g" parent="1" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=15;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="248" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_g_l" parent="1" style="text;html=1;fontSize=15;align=left;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="Full capacity" vertex="1">
+          <mxGeometry height="18" width="80" x="270" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_y" parent="1" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=15;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="414" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_y_l" parent="1" style="text;html=1;fontSize=15;align=left;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="Reduced capacity" vertex="1">
+          <mxGeometry height="18" width="100" x="434" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_r" parent="1" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;fontSize=15;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="601" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_r_l" parent="1" style="text;html=1;fontSize=15;align=left;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;autosizeText=0;" value="Disabled" vertex="1">
+          <mxGeometry height="18" width="60" x="621" y="337" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
