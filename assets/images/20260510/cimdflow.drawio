@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="6veajOCu5ODgpgkyNord">
+    <mxGraphModel dx="1343" dy="980" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="agent" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Agent&lt;/b&gt;&lt;br&gt;(Coding Agent)" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="as" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Authorization&lt;br&gt;Server&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="meta" parent="1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Metadata File&lt;/b&gt;&lt;br&gt;oauth-client.json" vertex="1">
+          <mxGeometry height="70" width="140" x="40" y="309" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="shape=mxgraph.flowchart.terminator;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;User&lt;/b&gt;&lt;br&gt;(Alice)" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="label1" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter ;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter%2B;" value="&lt;b&gt;&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;CIMD Flow: No Registration Phase&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="446" x="162" y="49" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="agent" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" target="as" value="">
+          <mxGeometry relative="1" x="-1" y="62" as="geometry">
+            <mxPoint x="-46" y="21" as="offset" />
+            <Array as="points">
+              <mxPoint x="250" y="178" />
+              <mxPoint x="250" y="178" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;dashed=1;" target="meta" value="">
+          <mxGeometry relative="1" x="-0.4318" y="-118" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="110" y="221" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="meta" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;dashed=1;" target="as" value="">
+          <mxGeometry relative="1" x="-0.4356" y="-22" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" value="">
+          <mxGeometry relative="1" x="0.0571" y="12" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="532" y="181" />
+              <mxPoint x="532" y="181" />
+            </Array>
+            <mxPoint x="462" y="181" as="sourcePoint" />
+            <mxPoint x="602" y="181" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" value="">
+          <mxGeometry relative="1" x="0.1143" y="17" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="531" y="200" />
+              <mxPoint x="531" y="200" />
+            </Array>
+            <mxPoint x="600" y="200" as="sourcePoint" />
+            <mxPoint x="460" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="as" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" target="agent" value="">
+          <mxGeometry relative="1" x="-0.1429" y="22" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="230" y="195" />
+              <mxPoint x="230" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note1" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=0;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;align=left;labelBackgroundColor=none;strokeWidth=3;fontFamily=Architects Daughter;fontColor=light-dark(#0432ff, #ededed);" value="&lt;ol&gt;&lt;span style=&quot;letter-spacing: 3px;&quot;&gt;&lt;li align=&quot;left&quot;&gt;GET /authorize?client_id=https://agent.example.com/oauth.json&lt;/li&gt;&lt;li align=&quot;left&quot;&gt;&lt;div&gt;GET&amp;nbsp;https://agent.example.com/oauth-client.json&lt;/div&gt;&lt;/li&gt;&lt;li align=&quot;left&quot;&gt;&lt;div&gt;Returns JSON metadata&lt;/div&gt;&lt;/li&gt;&lt;li align=&quot;left&quot;&gt;&lt;div&gt;Shows consent screen to user Alice&lt;/div&gt;&lt;/li&gt;&lt;li align=&quot;left&quot;&gt;&lt;div&gt;Alice Approves&amp;nbsp;&lt;/div&gt;&lt;/li&gt;&lt;li align=&quot;left&quot;&gt;&lt;div&gt;Authorization server Issues token&lt;/div&gt;&lt;/li&gt;&lt;/span&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="152" width="545" x="117.5" y="417" as="geometry" />
+        </mxCell>
+        <mxCell id="_LQVuTeGOPJkIX3kPE-s-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=light-dark(#0432ff, #ededed);strokeWidth=2;" value="&lt;b&gt;1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="34" x="223" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="_LQVuTeGOPJkIX3kPE-s-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000FF;strokeWidth=2;" value="&lt;b&gt;2&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="34" x="68" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="_LQVuTeGOPJkIX3kPE-s-4" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000FF;strokeWidth=2;" value="&lt;b&gt;3&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="34" x="261" y="303" as="geometry" />
+        </mxCell>
+        <mxCell id="_LQVuTeGOPJkIX3kPE-s-5" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000FF;strokeWidth=2;" value="&lt;b&gt;4&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="34" x="532" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="_LQVuTeGOPJkIX3kPE-s-6" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000FF;strokeWidth=2;" value="&lt;b&gt;5&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="34" x="534" y="209" as="geometry" />
+        </mxCell>
+        <mxCell id="_LQVuTeGOPJkIX3kPE-s-7" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000FF;strokeWidth=2;" value="&lt;b&gt;6&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="34" x="223" y="205" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
