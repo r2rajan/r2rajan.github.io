@@ -19,13 +19,13 @@ sidebar:
 
 # Part-3: Who Are You? How Client Registration works in the Agentic World
 
-Everytime i go to Las Vegas for attending a technology conference, I am always worried about the soul-crushing, velvet-rope maze at the hotel front desk where you stand for forty minutes to register and prove your identity to get that plastic key card. 
+Everytime i go to Las Vegas for attending technology conferences, I am always worried about the soul-crushing, velvet-rope maze at the hotel front desk where you stand for forty minutes to register and prove your identity to get that plastic key card. 
 
-Recently, I landed in Las Vegas in December 2025 to speak at AWS's flagship conference **re:invent**. With over 50,000 in-person attendees descending on the city in a single week, this time as I walked into the lobby, I didn't stop. While a sea of people stood in line to "register" by handing over IDs, waiting for the front desk to manually type data into a database, and receive a piece of plastic, I kept moving. My room was assigned, my identity was verified, and my phone was already a functioning key. I bypassed the "front desk" entirely and went straight to my room. It was a frictionless experience.
+Recently, I landed in Las Vegas in December 2025 to speak at AWS's flagship conference **re:invent**. With over 50,000 in-person attendees descending on the city in a single week, this time as I walked into the lobby **and** I didn't stop. While a sea of people stood in line to **register** by handing over IDs, waiting for the front desk to manually type data into a database, and receive a piece of plastic, I kept moving. My room was assigned, my identity was verified, and my phone was already a functioning key. I bypassed the **front desk** entirely and went straight to my room. It was a frictionless experience.
 
 That plastic key card, in the world of OAuth, we call it Dynamic Client Registration (DCR). We've spent years getting applications to stand in that same "front desk" line, registering with an authorization server, waiting for credentials, storing them in a database. In my [previous post](https://r2rajan.github.io/agentic%20identity/ai/2026/04/21/Whosaidyes/), I walked through how Alice grants consent to individual agents using exactly this model. Each agent registers as its own OAuth client via DCR (RFC 7591), getting per-agent revocation, independent scope ceilings, and clean audit trails.
 
-But what if our agents could just walk past the velvet rope? What if they could carry their own "Digital Key" that a server could verify on the fly? No registration desk, no waiting, no database entry.
+But what if our agents could just walk past the velvet rope? What if they could carry their own **Digital Key** that a server could verify on the fly? No registration desk, no waiting, no database entry.
 
 ![Introduction](/assets/images/20260510/Intro.png)
 
