@@ -1,5 +1,5 @@
 ---
-title: "Who Called That API? Why AI Agents Need Delegation, Not Impersonation"
+title: "Part-1: Who Called That API? Why AI Agents Need Delegation, Not Impersonation"
 excerpt: "When an AI agent acts on behalf of a user, your audit log needs to show both identities, not just one. RFC 8693 token exchange makes that possible with scope-narrowed, audience-restricted delegation tokens."
 categories:
   - Agentic Identity
@@ -15,7 +15,7 @@ mermaid: true
 sidebar:
   nav: categories
 ---
-# Who Called That API? Why AI Agents Need Delegation, Not Impersonation
+# Part-1: Who Called That API? Why AI Agents Need Delegation, Not Impersonation
 
 When an AI agent accesses a service on behalf of a user, who shows up in the audit log? If the answer is **just the user** or **just the agent**, you have a gap that will surface during your next security review.
 

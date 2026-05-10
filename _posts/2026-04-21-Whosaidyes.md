@@ -1,5 +1,5 @@
 ---
-title: "Who Said Yes? Designing User Consent for AI Agents"
+title: "Part-2: Who Said Yes? Designing User Consent for AI Agents"
 excerpt: "OAuth consent wasn't built for long-lived agents that accumulate capabilities over time. Per-agent client registration, incremental consent, and the distinction between standing and task-scoped authorization give users real control without requiring approval for every API call."
 categories:
   - Agentic Identity
@@ -17,7 +17,7 @@ sidebar:
   nav: categories
 ---
 
-# Who Said Yes? Designing User Consent for AI Agents
+# Part-2: Who Said Yes? Designing User Consent for AI Agents
 
 In the [previous post](/agentic identity/ai/2026/04/13/WhoaccessedmyAPI/), Alice had a token with exactly the right scopes, and reporting-agent exchanged it for a narrower delegated token before calling downstream services. The whole flow **assumed** that first token already existed and already carried the **right scopes**.
 
