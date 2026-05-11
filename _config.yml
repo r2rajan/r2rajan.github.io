@@ -100,6 +100,13 @@ social_links:
 feed:
   path: atom.xml
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-0TZ0MGRPLB"  # Replace with your GA4 Measurement ID
+    anonymize_ip: false
+
 # Exclude files from build
 exclude:
   - Gemfile
