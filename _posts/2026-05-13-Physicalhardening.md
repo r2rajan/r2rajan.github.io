@@ -84,8 +84,7 @@ The soldiers in Ukraine understood this. The cope cage on a tank is not a guaran
 
 The same logic applies to data centres. Physical hardening is not a strategy in itself. It is one layer in a defence that must also include architectural resilience at the workload level.  The netting buys you time at the roof level. The cages keep the HVAC running a bit longer. The jammers might stop the drone before it arrives at all. But none of them guarantee the building survives, which is why the workload architecture underneath matters more than any of them.
 
-Harden the facility to improve the odds. Architect the workload to survive regardless.
-
+**Harden the facility to improve the odds. Architect the workload to survive regardless.**
 ---
 
 ## After Thoughts
