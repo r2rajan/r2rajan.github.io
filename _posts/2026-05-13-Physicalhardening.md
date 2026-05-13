@@ -44,7 +44,7 @@ This was perfectly reasonable for decades. The threat model for a data centre di
 
 The soldiers in Ukraine did not have the luxury of waiting for a perfect solution. They needed something that worked today, built from materials they could source this week. The data centre industry has more time and more resources, but the engineering principles are the same.
 
-![Data center Physical Hardening](/assets/images/2026513/datacenter.png)
+![Data center Physical Hardening](/assets/images/20260513/datacenter.png)
 
 ### Netting as a First Line of Defence
 
@@ -80,7 +80,7 @@ If you think any of these measures, would make the datacenter completely invulne
 
 The soldiers in Ukraine understood this. The cope cage on a tank is not a guarantee of survival. It is a way to improve the odds. It buys time. It turns a certain kill into a probable miss. It keeps the crew alive long enough to reach cover or for the electronic countermeasures to take effect.
 
-![Iceberg Model](/assets/images/2026513/iceberg.png)
+![Iceberg Model](/assets/images/20260513/iceberg.png)
 
 The same logic applies to data centres. Physical hardening is not a strategy in itself. It is one layer in a defence that must also include architectural resilience at the workload level.  The netting buys you time at the roof level. The cages keep the HVAC running a bit longer. The jammers might stop the drone before it arrives at all. But none of them guarantee the building survives, which is why the workload architecture underneath matters more than any of them.
 
