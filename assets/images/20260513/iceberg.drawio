@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="H8GrK06apR2UaR8zU3RZ">
+    <mxGraphModel dx="1572" dy="1122" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" value="The Cope Cage is Not the Strategy" vertex="1">
+          <mxGeometry height="30" width="400" x="-198" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="wl_lbl_above" parent="1" style="text;html=1;fontSize=14;fontColor=#666666;fontStyle=2;align=right;" value="Above the surface" vertex="1">
+          <mxGeometry height="18" width="140" x="385" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="wl_lbl_below" parent="1" style="text;html=1;fontSize=14;fontColor=#1565c0;fontStyle=2;align=right;" value="Below the surface" vertex="1">
+          <mxGeometry height="18" width="140" x="385" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="g_UGlbWqUbii5xUsaHdl-1" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Winter-2664/Winter_Iceberg-858.svg" value="" vertex="1">
+          <mxGeometry height="689" width="689" x="430" y="-92" as="geometry" />
+        </mxCell>
+        <mxCell id="g_UGlbWqUbii5xUsaHdl-6" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="93" width="190" x="676" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="g_UGlbWqUbii5xUsaHdl-3" parent="g_UGlbWqUbii5xUsaHdl-6" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#e65100;align=center;" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Physical Hardening&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="15" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="g_UGlbWqUbii5xUsaHdl-4" parent="g_UGlbWqUbii5xUsaHdl-6" style="text;html=1;fontSize=11;fontColor=#bf360c;align=center;" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Netting | Cages | ECM | Camo&lt;/span&gt;" vertex="1">
+          <mxGeometry height="16" width="190" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="bot_title" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;fontColor=#FFFFFF;" value="Workload Architecture" vertex="1">
+          <mxGeometry height="22" width="200" x="681" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="bot_sub" parent="1" style="text;html=1;fontSize=11;fontColor=#FFFFFF;fontStyle=2;align=center;" value="(What actually keeps services running)" vertex="1">
+          <mxGeometry height="16" width="240" x="654.5" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="text;html=1;fontSize=12;fontColor=#FFFFFF;align=center;" value="Multi-region distribution" vertex="1">
+          <mxGeometry height="18" width="200" x="669" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="text;html=1;fontSize=12;fontColor=#FFFFFF;align=center;" value="Active-active deployments" vertex="1">
+          <mxGeometry height="18" width="200" x="669" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="text;html=1;fontSize=12;fontColor=#FFFFFF;align=center;" value="Elimination of single points of failure" vertex="1">
+          <mxGeometry height="18" width="250" x="649" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="text;html=1;fontSize=12;fontColor=#FFFFFF;align=center;" value="Graceful degradation" vertex="1">
+          <mxGeometry height="18" width="200" x="664" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="bot_pct" parent="1" style="text;html=1;fontSize=14;fontColor=#1A1A1A;fontStyle=3;align=center;" value="~80% of resilience" vertex="1">
+          <mxGeometry height="18" width="140" x="869" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="g_UGlbWqUbii5xUsaHdl-5" parent="1" style="text;html=1;fontSize=14;fontColor=#1A1A1A;fontStyle=2;align=center;" value="~20% of resilience" vertex="1">
+          <mxGeometry height="16" width="140" x="867" y="211" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

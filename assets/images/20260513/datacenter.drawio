@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="-XgWl0ncvYKetk42WVlM">
+    <mxGraphModel dx="1572" dy="722" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-1" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#06B6D4;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="438" width="970" x="-23" y="17" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="Data Centre Aerial Defence: Cross-Section" vertex="1">
+          <mxGeometry height="30" width="500" x="168" y="9" as="geometry" />
+        </mxCell>
+        <mxCell id="ecm_lbl" parent="1" style="text;html=1;fontSize=12;fontColor=#06b6d4;fontStyle=2;align=left;" value="Electronic Countermeasure Range" vertex="1">
+          <mxGeometry height="20" width="250" x="298" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ground" parent="1" style="rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;" value="" vertex="1">
+          <mxGeometry height="30" width="900" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ground_lbl" parent="1" style="text;html=1;fontSize=14;fontColor=#2d6a2d;align=center;" value="Ground Level" vertex="1">
+          <mxGeometry height="20" width="100" x="380" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="building" parent="1" style="rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;arcSize=5;" value="" vertex="1">
+          <mxGeometry height="180" width="500" x="200" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="bldg_lbl" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#1e3a5f;align=center;" value="Data Centre" vertex="1">
+          <mxGeometry height="24" width="120" x="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="roof" parent="1" style="rounded=0;fillColor=#666666;strokeColor=#333333;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="18" width="530" x="185" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="roof_lbl" parent="1" style="text;html=1;fontSize=14;fontColor=#FFFFFF;align=left;" value="Roof" vertex="1">
+          <mxGeometry height="16" width="30" x="428" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="cage_lbl" parent="1" style="text;html=1;fontSize=13;fontColor=#cc0000;fontStyle=1;align=center;" value="&lt;div&gt;Slat Armour&amp;nbsp;&lt;/div&gt;&lt;div&gt;(metal grid cages)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="16" width="132" x="380" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="netting" parent="1" style="rounded=0;fillColor=#f0ad4e;strokeColor=#e67e22;strokeWidth=3;opacity=70;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
+          <mxGeometry height="13" width="580" x="160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="net_lbl" parent="1" style="text;html=1;fontSize=11;fontColor=#e67e22;fontStyle=1;align=left;" value="Anti-Drone Netting (high-tensile)" vertex="1">
+          <mxGeometry height="18" width="240" x="305" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="gap_arrow" parent="1" style="shape=flexArrow;fillColor=#9673a6;strokeColor=#9673a6;startWidth=4;endWidth=4;startSize=4;endSize=4;html=1;" value="" vertex="1">
+          <mxGeometry height="115" width="10" x="760" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="gap_lbl" parent="1" style="text;html=1;fontSize=11;fontColor=#9673a6;fontStyle=1;align=center;" value="Detonation&#xa;Gap" vertex="1">
+          <mxGeometry height="30" width="80" x="775" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_bg" parent="1" style="rounded=1;fillColor=#f5f5f5;strokeColor=#cccccc;strokeWidth=1;fontSize=13;" value="" vertex="1">
+          <mxGeometry height="90" width="360" x="14" y="503" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_title" parent="1" style="text;html=1;fontSize=11;fontStyle=1;align=left;" value="Defence Layers" vertex="1">
+          <mxGeometry height="16" width="120" x="60" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1_box" parent="1" style="rounded=0;fillColor=none;strokeColor=#cc0000;strokeWidth=2;dashed=1;" value="" vertex="1">
+          <mxGeometry height="14" width="16" x="70" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1_txt" parent="1" style="text;html=1;fontSize=12;align=left;" value="Slat Armour (over rooftop equipment)" vertex="1">
+          <mxGeometry height="14" width="250" x="92" y="521" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2_box" parent="1" style="rounded=0;fillColor=#f0ad4e;strokeColor=#e67e22;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="14" width="16" x="70" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2_txt" parent="1" style="text;html=1;fontSize=12;align=left;" value="Anti-Drone Netting (suspended above roof)" vertex="1">
+          <mxGeometry height="14" width="280" x="92" y="539" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_box" parent="1" style="ellipse;fillColor=none;strokeColor=#06b6d4;strokeWidth=2;dashed=1;" value="" vertex="1">
+          <mxGeometry height="14" width="16" x="70" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_txt" parent="1" style="text;html=1;fontSize=11;align=left;" value="ECM Range (signal jamming perimeter)" vertex="1">
+          <mxGeometry height="14" width="260" x="92" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.76;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="111.5" y="23" as="sourcePoint" />
+            <mxPoint x="112" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-9" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="213" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-8" parent="ER_TvKWzcX7ost7ZvcAW-9" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#B3B3B3;sketch=1;strokeColor=light-dark(#ff2600, #ededed);" value="" vertex="1">
+          <mxGeometry height="60" width="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hvac1" parent="ER_TvKWzcX7ost7ZvcAW-9" style="rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=12;verticalAlign=middle;html=1;" value="HVAC" vertex="1">
+          <mxGeometry height="28" width="60" x="28" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-11" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="553" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-12" parent="ER_TvKWzcX7ost7ZvcAW-11" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#B3B3B3;sketch=1;strokeColor=light-dark(#ff2600, #ededed);" value="" vertex="1">
+          <mxGeometry height="60" width="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-13" parent="ER_TvKWzcX7ost7ZvcAW-11" style="rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=12;verticalAlign=middle;html=1;" value="HVAC" vertex="1">
+          <mxGeometry height="28" width="60" x="28" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-14" parent="1" style="rounded=0;fillColor=#f0ad4e;strokeColor=#e67e22;strokeWidth=3;opacity=70;rotation=90;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
+          <mxGeometry height="13" width="203" x="64" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-15" parent="1" style="rounded=0;fillColor=#f0ad4e;strokeColor=#e67e22;strokeWidth=3;opacity=70;rotation=90;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
+          <mxGeometry height="13" width="203" x="632" y="248" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
