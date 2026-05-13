@@ -32,7 +32,7 @@
           <mxGeometry height="16" width="30" x="428" y="261" as="geometry" />
         </mxCell>
         <mxCell id="cage_lbl" parent="1" style="text;html=1;fontSize=13;fontColor=#cc0000;fontStyle=1;align=center;" value="&lt;div&gt;Slat Armour&amp;nbsp;&lt;/div&gt;&lt;div&gt;(metal grid cages)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="16" width="132" x="380" y="190" as="geometry" />
+          <mxGeometry height="16" width="132" x="263" y="158" as="geometry" />
         </mxCell>
         <mxCell id="netting" parent="1" style="rounded=0;fillColor=#f0ad4e;strokeColor=#e67e22;strokeWidth=3;opacity=70;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
           <mxGeometry height="13" width="580" x="160" y="140" as="geometry" />
@@ -44,7 +44,7 @@
           <mxGeometry height="115" width="10" x="760" y="148" as="geometry" />
         </mxCell>
         <mxCell id="gap_lbl" parent="1" style="text;html=1;fontSize=11;fontColor=#9673a6;fontStyle=1;align=center;" value="Detonation&#xa;Gap" vertex="1">
-          <mxGeometry height="30" width="80" x="775" y="190" as="geometry" />
+          <mxGeometry height="30" width="80" x="580" y="194" as="geometry" />
         </mxCell>
         <mxCell id="legend_bg" parent="1" style="rounded=1;fillColor=#f5f5f5;strokeColor=#cccccc;strokeWidth=1;fontSize=13;" value="" vertex="1">
           <mxGeometry height="90" width="360" x="14" y="503" as="geometry" />
@@ -86,7 +86,7 @@
           <mxGeometry height="28" width="60" x="28" y="18" as="geometry" />
         </mxCell>
         <mxCell id="ER_TvKWzcX7ost7ZvcAW-11" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="553" y="203" as="geometry" />
+          <mxGeometry height="60" width="120" x="352" y="203" as="geometry" />
         </mxCell>
         <mxCell id="ER_TvKWzcX7ost7ZvcAW-12" parent="ER_TvKWzcX7ost7ZvcAW-11" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#B3B3B3;sketch=1;strokeColor=light-dark(#ff2600, #ededed);" value="" vertex="1">
           <mxGeometry height="60" width="120" as="geometry" />
@@ -99,6 +99,12 @@
         </mxCell>
         <mxCell id="ER_TvKWzcX7ost7ZvcAW-15" parent="1" style="rounded=0;fillColor=#f0ad4e;strokeColor=#e67e22;strokeWidth=3;opacity=70;rotation=90;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
           <mxGeometry height="13" width="203" x="632" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="ER_TvKWzcX7ost7ZvcAW-17" edge="1" parent="1" source="roof" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.909;exitY=-0.056;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.871;entryY=0.231;entryDx=0;entryDy=0;entryPerimeter=0;" target="netting" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="612" y="220" as="sourcePoint" />
+            <mxPoint x="662" y="170" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
