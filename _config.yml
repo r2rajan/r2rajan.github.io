@@ -38,6 +38,8 @@ syntax_highlighter_opts:
 navigation:
   - title: "Home"
     url: /
+  - title: "About"
+    url: /about/
   - title: "Categories"
     url: /categories/
 
