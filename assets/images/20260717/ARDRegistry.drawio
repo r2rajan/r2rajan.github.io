@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Amazon Quick">
+  <diagram id="ard-registry-backend" name="ARD Registry Backend">
+    <mxGraphModel dx="2066" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bknv3sTwfUHINvF2bjzB-7" parent="1" style="fillColor=#E0E0E0;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(26, 26, 26);&quot;&gt;Partner domains&lt;/span&gt;" vertex="1">
+          <mxGeometry height="296" width="266" x="704" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="caller" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#FFFFFF;strokeColor=none;fontSize=12;fontStyle=1;verticalAlign=bottom;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Search UI&lt;br&gt;(consumer / client)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="110" width="180" x="-50" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="caller" style="endArrow=block;html=1;fontSize=10;strokeColor=#232F3E;strokeWidth=1.5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.017;exitY=0.436;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bknv3sTwfUHINvF2bjzB-1" value="POST /search">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bknv3sTwfUHINvF2bjzB-2" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" value="AWS Cloud" vertex="1">
+          <mxGeometry height="344" width="830" x="180" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="Bknv3sTwfUHINvF2bjzB-6" parent="Bknv3sTwfUHINvF2bjzB-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Agent Resource Discovery Registry - Search Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="315" x="257.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Bknv3sTwfUHINvF2bjzB-1" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="250" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lambda-icon" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="490" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="Bknv3sTwfUHINvF2bjzB-1" style="endArrow=block;html=1;fontSize=10;strokeColor=#232F3E;strokeWidth=1.5;" target="lambda-icon" value="invokes">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="258" y="337.741935483871" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s3-icon" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="730" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="lambda-icon" style="endArrow=block;html=1;fontSize=10;strokeColor=#232F3E;strokeWidth=1.5;" value="Read at Cold start">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="311" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cf-icon" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="730" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="cf-icon" style="endArrow=block;html=1;fontSize=10;strokeColor=#5A30B5;strokeWidth=1.5;dashed=1;" target="s3-icon" value="origin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-lbl" parent="1" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontSize=10;" value="&lt;b&gt;S3 Bucket&lt;/b&gt;&lt;br&gt;&lt;div&gt;Partner catalogs,&amp;nbsp;&lt;/div&gt;&lt;div&gt;agent cards&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="689" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="cf-lbl" parent="1" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontSize=10;" value="&lt;b&gt;CloudFront&lt;/b&gt;&#xa;Serves ai-catalog.json publicly&#xa;(simulates partner domains)" vertex="1">
+          <mxGeometry height="50" width="160" x="800" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="lambda-lbl" parent="1" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontSize=10;" value="&lt;div&gt;&lt;b&gt;Lambda&lt;/b&gt;&amp;nbsp;&lt;b&gt;Function&lt;/b&gt;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Merges partner catalogs&lt;/div&gt;Weighted keyword scoring" vertex="1">
+          <mxGeometry height="50" width="160" x="449" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="apigw-lbl" parent="1" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontSize=10;" value="&lt;b&gt;API Gateway&lt;/b&gt; (HTTP API)&#xa;Public endpoint&#xa;POST /search&#xa;in: query.text + query.filter&#xa;out: ranked results[] w/ source" vertex="1">
+          <mxGeometry height="80" width="160" x="220" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Bknv3sTwfUHINvF2bjzB-8" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Search.svg;" value="" vertex="1">
+          <mxGeometry height="65" width="64" x="28" y="271" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
